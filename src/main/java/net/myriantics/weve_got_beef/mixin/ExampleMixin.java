@@ -1,4 +1,4 @@
-package net.myriantics.template.mixin;
+package net.myriantics.weve_got_beef.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

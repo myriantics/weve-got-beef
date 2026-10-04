@@ -21,6 +21,16 @@ repositories {
 	maven {
 		url = "https://api.modrinth.com/maven"
 	}
+
+	maven {
+		name = "Terraformers"
+		url = "https://maven.terraformersmc.com/"
+	}
+
+	maven {
+		name = "Xander Maven"
+		url = "https://maven.isxander.dev/releases"
+	}
 }
 
 fabricApi {
@@ -28,7 +38,6 @@ fabricApi {
 }
 
 loom {
-	splitEnvironmentSourceSets()
 }
 
 dependencies {
@@ -38,6 +47,10 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// deps
+	implementation "com.terraformersmc:modmenu:${project.modmenu_version}"
+	implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.

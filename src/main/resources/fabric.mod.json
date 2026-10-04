@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "template",
+	"id": "weve-got-beef",
 	"version": "${version}",
 	"name": "${mod_name}",
 	"description": "${mod_description}",
@@ -16,26 +16,16 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.myriantics.template.TemplateMod"
-		],
-		"client": [
-			"net.myriantics.template.TemplateModClient"
-		],
-		"fabric-datagen": [
-			"net.myriantics.template.TemplateModDataGenerator"
+			"net.myriantics.weve_got_beef.WeveGotBeef"
 		]
 	},
 	"mixins": [
-		"template.mixins.json",
-		{
-			"config": "template.client.mixins.json",
-			"environment": "client"
-		}
+		"template.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${loader_version}",
 		"minecraft": "${minecraft_version}",
-		"java": ">=17",
+		"java": ">=25",
 		"fabric-api": ">=${fabric_api_version}"
 	},
 	"suggests": {
