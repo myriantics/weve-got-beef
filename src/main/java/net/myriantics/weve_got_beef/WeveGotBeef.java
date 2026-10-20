@@ -12,7 +12,7 @@ public class WeveGotBeef implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("We've Got Beef has loaded!");
+		LOGGER.info("We've got beef. Because We've Got Beef has loaded.");
 	}
 
 	public static Identifier locate(String name) {

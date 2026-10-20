@@ -3,7 +3,7 @@
 	"package": "net.myriantics.weve_got_beef.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+      "MinecraftMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

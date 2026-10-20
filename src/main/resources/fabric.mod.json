@@ -13,7 +13,7 @@
 	},
 	"license": "MIT",
 	"icon": "assets/template/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"net.myriantics.weve_got_beef.WeveGotBeef"
